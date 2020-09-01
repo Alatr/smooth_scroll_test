@@ -1,8 +1,3 @@
-// import { $ } from '../node_modules/jquery';
-
-// declare let $: $;
-// export default $;
-
-
-declare module "jquery";
-declare module "locomotive-scroll";
+// In a .d.ts file or .ts file that is not a module:
+declare module 'JQuery' 
+declare module 'locomotive-scroll' 
