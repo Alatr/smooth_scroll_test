@@ -1,6 +1,6 @@
 /* eslint-disable */
 /// <reference path ='../../../../typings.d.ts'/>
-/* eslint-enable */
+
 
 
 // console.log(sayHello('2'));
@@ -14,3 +14,12 @@ import LocomotiveScroll =  require('locomotive-scroll');
 console.log($);
 console.log(LocomotiveScroll);
 
+;
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".js-scroll-container"),
+  smooth: true,
+    smoothMobile: false,
+    inertia: 1.1
+}); 
+
+/* eslint-enable */

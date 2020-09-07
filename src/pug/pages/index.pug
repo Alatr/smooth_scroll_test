@@ -2,7 +2,7 @@
 extends ../layout/main
 block variable
 	-
-		var title_page = 'Квартира 2А'
+		var title_page = 'Smooth scroll'
 		var id_page = 'flat-page'
 		var class_page = 'flat-page'
 		var breadcrumbsBtn = 'filter'
@@ -22,9 +22,14 @@ block scripts
 	script(defer src='./assets/scripts/index.js')
 	script(defer src='./assets/scripts/home.js')
 block content
-	.-content
-		include ../includes/breadcrumbs.pug
+	each v, i in [1,1,1,1,1,1]
+		section.section
+			.section__img
+				+img(i+'.jpg')
+			.section__text
+				h2 Lorem ipsum
+				p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae maxime atque voluptates! Maiores aperiam atque sit quibusdam autem debitis quia, eos, sunt sapiente dicta assumenda at ipsa! Itaque, perferendis qui.
+
 block footer
-	include ../includes/footer.pug
 
 block header
