@@ -25,6 +25,8 @@ block scripts
 block content
 	section.section.section__00
 	section.section.section__00
+	section.section.section__00
+	section.section.section__00
 	section.section.section__0
 		.section__img
 			span.sec-circle
@@ -33,9 +35,9 @@ block content
 			h2 Lorem ipsum
 			p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae maxime atque voluptates! Maiores aperiam atque sit quibusdam autem debitis quia, eos, sunt sapiente dicta assumenda at ipsa! Itaque, perferendis qui.
 	section.section.section__1
-		.section__img
-			+img('4.jpg')
-		.section__text
+		.section__img(data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal")
+			//- +img('4.jpg')
+		.section__text(data-scroll data-scroll-speed="1" data-scroll-direction="horizontal")
 			h2 Lorem ipsum <br> dolor sit amet
 	section.section.section__2
 		.section__img

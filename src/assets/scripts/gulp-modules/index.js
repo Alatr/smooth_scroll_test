@@ -50,7 +50,7 @@ const circleTL = function() {
 		tl.fromTo([title, text], 1.5, {x: 100, autoAlpha: 0}, {x: 0, autoAlpha: 1, stagger: 0.1}, '<')
 		tl.fromTo(img, 3, {
 			rotation: 20,
-			scale: 1.5
+			scale: 2
 		}, {
 			rotation: 0,
 			transformOrigin: "50% 50%",

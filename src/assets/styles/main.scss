@@ -103,11 +103,16 @@ html.has-scroll-dragging {
 		white-space: nowrap;
 		font-size: 90px;
 		line-height: 1.1em;
-	}
+  }
+  .section__text{
+    mix-blend-mode: overlay;
+  }
 	.section__img {
+    transform: skew(10deg);
 		height: 600px;
 			margin-right: 5%;
-			width: 50%;
+      width: 50%;
+      background-color: #5ca3eb;
 		}
 }
 .section__3{
