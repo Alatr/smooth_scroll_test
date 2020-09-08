@@ -277,7 +277,7 @@ gulp.task('default', gulp.series(
 		svgSprite,
 		clean,
 		libs,
-		gulp.parallel(styles, templates, fonts, gulpModules, typeScript, testJsLint, images, static),
+		gulp.parallel(styles, templates, fonts, gulpModules, /* typeScript, testJsLint, */ images, static),
 		gulp.parallel(watch, server)
 ));
 

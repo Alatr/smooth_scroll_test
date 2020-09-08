@@ -19,16 +19,34 @@ block meta
 block head
 		link(rel='stylesheet', href="./assets/styles/main.min.css")
 block scripts
+	script(defer src='./assets/scripts/libs.js')
 	script(defer src='./assets/scripts/index.js')
 	script(defer src='./assets/scripts/home.js')
 block content
-	each v, i in [1,1,1,1,1,1]
-		section.section
-			.section__img
-				+img(i+'.jpg')
-			.section__text
-				h2 Lorem ipsum
-				p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae maxime atque voluptates! Maiores aperiam atque sit quibusdam autem debitis quia, eos, sunt sapiente dicta assumenda at ipsa! Itaque, perferendis qui.
+	section.section.section__00
+	section.section.section__00
+	section.section.section__0
+		.section__img
+			span.sec-circle
+			+img('1.jpg')
+		.section__text
+			h2 Lorem ipsum
+			p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae maxime atque voluptates! Maiores aperiam atque sit quibusdam autem debitis quia, eos, sunt sapiente dicta assumenda at ipsa! Itaque, perferendis qui.
+	section.section.section__1
+		.section__img
+			+img('4.jpg')
+		.section__text
+			h2 Lorem ipsum <br> dolor sit amet
+	section.section.section__2
+		.section__img
+			+img('3.jpg')
+		.section__text
+			h2 Lorem ipsum <br> dolor sit amet
+	section.section.section__3
+		.section__img
+			+img('5.jpg')
+		.section__text
+			h2 Lorem ipsum <br> dolor sit amet
 
 block footer
 
