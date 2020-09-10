@@ -115,6 +115,29 @@ html.has-scroll-dragging {
       background-color: #5ca3eb;
 		}
 }
+.section__2:not(#J){
+	.section__img{
+		height: 650px;
+		margin: 0 auto;
+		width: auto;
+		max-width: 500px;
+		// transform: rotate3d(1, 0.2, 0.23, 28deg);
+		overflow: visible;
+		img{
+			transform-origin: 50% 100%;
+		}
+	}
+	.section__text{
+		width: auto;
+	}
+	h2{
+		
+		white-space: nowrap;
+		font-size: 90px;
+		line-height: 1.1em;
+	}
+}
+
 .section__3{
 	h2{
 		padding-left: 50%;
@@ -125,28 +148,10 @@ html.has-scroll-dragging {
 	.section__img {
 		margin-right: 10%;
 		width: 50%;
-	}
-}
-.section__2{
-	.section__img{
-		height: 650px;
-		margin: 0 auto;
-		width: auto;
-		max-width: 500px;
 		img{
 		}
 	}
-	.section__text{
-		width: auto;
-	}
-	h2{
-
-		white-space: nowrap;
-		font-size: 90px;
-		line-height: 1.1em;
-	}
 }
-
 .sec-circle {
 	position: absolute;
 	top: 50%;
